@@ -16,18 +16,19 @@ class ChatViewController: UIViewController {
     var messages: [Message] = [
     Message(sender: "1@2.com", body: "Hey!"),
     Message(sender: "a@b.com", body: "Hiii!"),
-    Message(sender: "1@2.com", body: "How are you...")
+    Message(sender: "1@2.com", body: "How are you...ldkwfjhnsdaml;qdkfjdsmlq;fkjngvdlsma;dkfgjdhsmlwfkjghbsdnskqwlefhsjdkldjfhbc")
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         
-        // so whenever user interacts with tableview, then tableViewdelegate methods gets triggered
-        tableView.delegate = self
+        // tableView.delegate = self
         title = K.appName
         navigationItem.hidesBackButton = true
         
+        // nibName must be the file name where the design is created
+        tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -46,27 +47,26 @@ class ChatViewController: UIViewController {
 
 extension ChatViewController: UITableViewDataSource{
     
-    // basically talks about how many rows/cells are needed in table view and what data needs to be pu in over
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
     }
     
-    // asks about a UI table view cell that needs to be displayed in each and every row of table view and it gets called for as many times as rows in table view
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // dequeueReusableCell returns a reusable cell for specified reused identifier and adds it to the table
-        // reused identifier is the identified set when we add cells to table view in design file
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
+        // previously we were dequeuing a box-standard UITable view cell..now in order to dequeue it to message cell we use as keyword to cast into message cell class type. message cell class type is the custom design file which we have built
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         
-        cell.textLabel?.text = messages[indexPath.row].body
+        cell.label?.text = messages[indexPath.row].body
         return cell
     }
 }
 
-extension ChatViewController: UITableViewDelegate{
-    
-    // below methods is triggered when an action is performed on table view cells
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-    }
-}
+
+// We don’t want any interaction to be done with text message so commenting below delegate extension and call or the same
+//extension ChatViewController: UITableViewDelegate{
+//
+//    // below methods is triggered when an action is performed on table view cells
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print(indexPath.row)
+//    }
+//}
