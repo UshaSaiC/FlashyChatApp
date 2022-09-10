@@ -270,7 +270,7 @@
             </objects>
             <point key="canvasLocation" x="2786.1538461538462" y="643.3649289099526"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--⚡️FlashChat-->
         <scene sceneID="1Qb-yy-3JV">
             <objects>
                 <viewController id="581-vf-Vya" customClass="ChatViewController" customModule="FlashyChatApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -332,7 +332,7 @@
                             <constraint firstItem="v4X-5l-Z3c" firstAttribute="bottom" secondItem="w0I-69-8hF" secondAttribute="bottom" id="qW3-Pb-ck8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ef6-Xh-tDC">
+                    <navigationItem key="navigationItem" title="⚡️FlashChat" id="ef6-Xh-tDC">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="cXm-g4-EDs">
                             <connections>
                                 <action selector="logoutPressed:" destination="581-vf-Vya" id="dCN-Sl-6Sc"/>
@@ -356,6 +356,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="N0E-I3-ItS">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="BrandBlue"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
