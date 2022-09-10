@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C17D5232ECAF4E373632B8 /* Pods_FlashyChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BB2C050FE548172E358229 /* Pods_FlashyChatApp.framework */; };
 		B2FCAF9328CB8BFE002726AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FCAF9228CB8BFE002726AB /* AppDelegate.swift */; };
 		B2FCAF9528CB8BFE002726AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FCAF9428CB8BFE002726AB /* SceneDelegate.swift */; };
 		B2FCAF9728CB8BFE002726AB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FCAF9628CB8BFE002726AB /* WeatherViewController.swift */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17A6A678805046B265F080E3 /* Pods-FlashyChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashyChatApp.release.xcconfig"; path = "Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp.release.xcconfig"; sourceTree = "<group>"; };
+		30BB2C050FE548172E358229 /* Pods_FlashyChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashyChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55552AF91310DCF8B48FBB7B /* Pods-FlashyChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashyChatApp.debug.xcconfig"; path = "Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B2FCAF8F28CB8BFE002726AB /* FlashyChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashyChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FCAF9228CB8BFE002726AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2FCAF9428CB8BFE002726AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C17D5232ECAF4E373632B8 /* Pods_FlashyChatApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09662C7C3F2051EDFA22CE4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55552AF91310DCF8B48FBB7B /* Pods-FlashyChatApp.debug.xcconfig */,
+				17A6A678805046B265F080E3 /* Pods-FlashyChatApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		409702E7ADDBB6EDBD1193E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30BB2C050FE548172E358229 /* Pods_FlashyChatApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2FCAF8628CB8BFE002726AB = {
 			isa = PBXGroup;
 			children = (
 				B2FCAF9128CB8BFE002726AB /* FlashyChatApp */,
 				B2FCAF9028CB8BFE002726AB /* Products */,
+				09662C7C3F2051EDFA22CE4B /* Pods */,
+				409702E7ADDBB6EDBD1193E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2FCAFA328CB8BFF002726AB /* Build configuration list for PBXNativeTarget "FlashyChatApp" */;
 			buildPhases = (
+				0EA245A323B259F446C1A9D7 /* [CP] Check Pods Manifest.lock */,
 				B2FCAF8B28CB8BFE002726AB /* Sources */,
 				B2FCAF8C28CB8BFE002726AB /* Frameworks */,
 				B2FCAF8D28CB8BFE002726AB /* Resources */,
+				088BF2163D7E74A41D5A7C54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +192,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		088BF2163D7E74A41D5A7C54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0EA245A323B259F446C1A9D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlashyChatApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2FCAF8B28CB8BFE002726AB /* Sources */ = {
@@ -318,6 +387,7 @@
 		};
 		B2FCAFA428CB8BFF002726AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55552AF91310DCF8B48FBB7B /* Pods-FlashyChatApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -345,6 +415,7 @@
 		};
 		B2FCAFA528CB8BFF002726AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A6A678805046B265F080E3 /* Pods-FlashyChatApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
