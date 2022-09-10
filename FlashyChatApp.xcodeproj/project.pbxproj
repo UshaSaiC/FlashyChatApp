@@ -11,6 +11,7 @@
 		B29ED27C28CC7C4F00481896 /* FlashyChatApp.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = B29ED27B28CC7C4F00481896 /* FlashyChatApp.xcworkspace */; };
 		B29ED27E28CC7C7000481896 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B29ED27D28CC7C7000481896 /* GoogleService-Info.plist */; };
 		B29ED28028CC96AB00481896 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29ED27F28CC96AB00481896 /* Constants.swift */; };
+		B29ED28228CCA2CE00481896 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29ED28128CCA2CE00481896 /* Message.swift */; };
 		B2FCAF9328CB8BFE002726AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FCAF9228CB8BFE002726AB /* AppDelegate.swift */; };
 		B2FCAF9528CB8BFE002726AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FCAF9428CB8BFE002726AB /* SceneDelegate.swift */; };
 		B2FCAF9728CB8BFE002726AB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FCAF9628CB8BFE002726AB /* WeatherViewController.swift */; };
@@ -29,6 +30,7 @@
 		B29ED27B28CC7C4F00481896 /* FlashyChatApp.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = FlashyChatApp.xcworkspace; sourceTree = SOURCE_ROOT; };
 		B29ED27D28CC7C7000481896 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B29ED27F28CC96AB00481896 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B29ED28128CCA2CE00481896 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B2FCAF8F28CB8BFE002726AB /* FlashyChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashyChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FCAF9228CB8BFE002726AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2FCAF9428CB8BFE002726AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		B2FCAFA828CB8CAC002726AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B29ED28128CCA2CE00481896 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				B2FCAF9528CB8BFE002726AB /* SceneDelegate.swift in Sources */,
 				B2FCAFAC28CB8D62002726AB /* LoginViewController.swift in Sources */,
 				B29ED28028CC96AB00481896 /* Constants.swift in Sources */,
+				B29ED28228CCA2CE00481896 /* Message.swift in Sources */,
 				B2FCAFAE28CB8D6E002726AB /* ChatViewController.swift in Sources */,
 				B2FCAFAA28CB8D53002726AB /* RegisterViewController.swift in Sources */,
 			);

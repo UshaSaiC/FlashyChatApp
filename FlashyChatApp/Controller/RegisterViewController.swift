@@ -21,7 +21,7 @@ class RegisterViewController: UIViewController {
                     print(errorValue.localizedDescription)
                 }
                 else{
-                    self.performSegue(withIdentifier: Constants.registerSegue, sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
         }
