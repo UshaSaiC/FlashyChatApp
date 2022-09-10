@@ -5,5 +5,7 @@ target 'FlashyChatApp' do
   use_frameworks!
 
   # Pods for FlashyChatApp
-
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
+  
 end
