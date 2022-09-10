@@ -136,7 +136,6 @@
 				B2FCAF8B28CB8BFE002726AB /* Sources */,
 				B2FCAF8C28CB8BFE002726AB /* Frameworks */,
 				B2FCAF8D28CB8BFE002726AB /* Resources */,
-				088BF2163D7E74A41D5A7C54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,23 +193,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		088BF2163D7E74A41D5A7C54 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0EA245A323B259F446C1A9D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

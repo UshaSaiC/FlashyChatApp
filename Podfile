@@ -5,6 +5,5 @@ target 'FlashyChatApp' do
   use_frameworks!
 
   # Pods for FlashyChatApp
-  pod 'CLTypingLabel', '~> 0.4.0'
 
 end
