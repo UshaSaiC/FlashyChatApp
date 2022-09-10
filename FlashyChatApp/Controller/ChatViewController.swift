@@ -31,8 +31,9 @@ class ChatViewController: UIViewController {
     }
     
     func loadMessages() {
-        messages = []
-        db.collection(K.FStore.collectionName).getDocuments { querySnapshot, error in
+        // when we use getDocuments method, a completion handler would be triggered once we retrieve document from a collection in database which is kind of manual process, to ease it we use addSnapshotListener method to get real time updates
+        db.collection(K.FStore.collectionName).addSnapshotListener { querySnapshot, error in
+            self.messages = []
             if let errorValue = error {
                 print(errorValue)
             } else{
@@ -44,7 +45,6 @@ class ChatViewController: UIViewController {
                             self.messages.append(newMessage)
                             
                             DispatchQueue.main.async {
-                                // generally it takes time to get info from firebase and then update views, in order to make that process simple we use reload data so that once the data is retrieved... UI would reload with new data
                                 self.tableView.reloadData()
                             }
                         }
