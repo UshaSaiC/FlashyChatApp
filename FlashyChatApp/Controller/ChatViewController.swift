@@ -60,7 +60,6 @@ class ChatViewController: UIViewController {
             db.collection(K.FStore.collectionName).addDocument(data: [
                 K.FStore.senderField: messageSender,
                 K.FStore.bodyField: messageBody,
-                // adding dateField so that we can sort the msgs based on time sent and display message in a order rather then at random places
                 K.FStore.dateField: Date().timeIntervalSince1970]) { error in
                     if let errorValue = error{
                         print(errorValue)
