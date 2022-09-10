@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09C17D5232ECAF4E373632B8 /* Pods_FlashyChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BB2C050FE548172E358229 /* Pods_FlashyChatApp.framework */; };
+		B2480FCB28CCCD1E00FFCEF3 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2480FC928CCCD1E00FFCEF3 /* MessageCell.swift */; };
+		B2480FCC28CCCD1E00FFCEF3 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2480FCA28CCCD1E00FFCEF3 /* MessageCell.xib */; };
 		B29ED27C28CC7C4F00481896 /* FlashyChatApp.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = B29ED27B28CC7C4F00481896 /* FlashyChatApp.xcworkspace */; };
 		B29ED27E28CC7C7000481896 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B29ED27D28CC7C7000481896 /* GoogleService-Info.plist */; };
 		B29ED28028CC96AB00481896 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29ED27F28CC96AB00481896 /* Constants.swift */; };
@@ -27,6 +29,8 @@
 		17A6A678805046B265F080E3 /* Pods-FlashyChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashyChatApp.release.xcconfig"; path = "Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		30BB2C050FE548172E358229 /* Pods_FlashyChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashyChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55552AF91310DCF8B48FBB7B /* Pods-FlashyChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashyChatApp.debug.xcconfig"; path = "Target Support Files/Pods-FlashyChatApp/Pods-FlashyChatApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B2480FC928CCCD1E00FFCEF3 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		B2480FCA28CCCD1E00FFCEF3 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		B29ED27B28CC7C4F00481896 /* FlashyChatApp.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = FlashyChatApp.xcworkspace; sourceTree = SOURCE_ROOT; };
 		B29ED27D28CC7C7000481896 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B29ED27F28CC96AB00481896 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				B2FCAF9828CB8BFE002726AB /* Main.storyboard */,
+				B2480FC928CCCD1E00FFCEF3 /* MessageCell.swift */,
+				B2480FCA28CCCD1E00FFCEF3 /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2FCAF9F28CB8BFF002726AB /* LaunchScreen.storyboard in Resources */,
+				B2480FCC28CCCD1E00FFCEF3 /* MessageCell.xib in Resources */,
 				B29ED27C28CC7C4F00481896 /* FlashyChatApp.xcworkspace in Resources */,
 				B29ED27E28CC7C7000481896 /* GoogleService-Info.plist in Resources */,
 				B2FCAF9C28CB8BFF002726AB /* Assets.xcassets in Resources */,
@@ -261,6 +268,7 @@
 				B29ED28228CCA2CE00481896 /* Message.swift in Sources */,
 				B2FCAFAE28CB8D6E002726AB /* ChatViewController.swift in Sources */,
 				B2FCAFAA28CB8D53002726AB /* RegisterViewController.swift in Sources */,
+				B2480FCB28CCCD1E00FFCEF3 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
